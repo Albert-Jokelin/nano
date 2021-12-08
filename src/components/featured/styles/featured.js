@@ -2,7 +2,9 @@ import styled from 'styled-components/macro';
 
 export const Background = styled.div`
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url(${props => props.img}) center / cover no-repeat;
-  height: 1000px;
+  height: 650px;
+  align-items:center;
+  position: relative;
 `;
 
 export const Heading = styled.p`
@@ -47,13 +49,15 @@ export const Button = styled.button`
   align-items: center;
   margin-left: 10px;
   height: 50px;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   text-transform: capitalize;
   padding: 0 32px;
   font-size: 26px;
+  border-radius: 5px;
   border: 0;
   cursor: pointer;
+  opacity: 0.7;
   img {
     margin-left: 10px;
     filter: brightness(0) invert(1);
@@ -63,8 +67,10 @@ export const Button = styled.button`
     }
   }
   &:hover {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
+    transition: all 0.2s ease-in;
+    opacity: 1;
   }
   @media (max-width: 1000px) {
     height: 50px;
@@ -79,4 +85,15 @@ export const Form = styled.form`
   margin-top: 40px;
   align-items: center;
   justify-content: center;
+`;
+
+export const ButtonHolder = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  justify-content: space-around;
+  text-decorations: none;
 `;

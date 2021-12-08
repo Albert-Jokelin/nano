@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import { Link as ReachRouterLink } from 'react-router-dom';
 
 
 export const Container = styled.div`
@@ -18,7 +19,7 @@ margin-left: 25px;
   width: 120px;
 }
 `
-export const Link = styled.p`
+export const Link = styled(ReachRouterLink)`
   color: #000;
   text-decoration: none;
   margin-right: 30px;

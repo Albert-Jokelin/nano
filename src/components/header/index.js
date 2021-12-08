@@ -20,9 +20,7 @@ Header.Logo = function HeaderLogo({ to, ...restProps }){
 
 Header.TextLink = function HeaderTextLink({ to, children, ...restProps }) {
   return(
-    <ReachRouterLink to={to}>
-    <Link {...restProps}>{children}</Link>
-    </ReachRouterLink>
+      <Link {...restProps}>{children}</Link>
   );
 };
 

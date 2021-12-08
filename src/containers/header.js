@@ -8,10 +8,9 @@ export function HeaderContainer(){
     <Header>
       <Header.Frame>
         <Header.Logo to={ROUTES.HOME}src={logo}/>
-        <Header.TextLink to="/Marketplace">Marketplace</Header.TextLink>
+        <Header.TextLink to={ROUTES.MARKETPLACE}>Marketplace</Header.TextLink>
         <Header.TextLink>Create</Header.TextLink>
-        <Header.TextLink>Community</Header.TextLink>
-        <Header.TextLink>Blog</Header.TextLink>
+        <Header.TextLink to={ROUTES.RESOURCES}>Resources</Header.TextLink>
         <Header.Login> Login or Signup </Header.Login>
       </Header.Frame>
     </Header>

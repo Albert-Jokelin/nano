@@ -1,5 +1,6 @@
 import React, { useState }from 'react'
-import { Background, Heading, Input, Button, Form, SubHeading } from './styles/featured'
+import { Link as ReachRouterLink } from 'react-router-dom';
+import { Background, Heading, Input, Button, Form, SubHeading, ButtonHolder } from './styles/featured'
 
 export default function Featured({ children, ...restProps }){
   return(
@@ -32,5 +33,23 @@ Featured.Search = function FeatureSearch({ children, ...restProps}) {
       <Input type="text" placeholder="Search"value = {search} onChange={ e => setSearch(e.target.value)}/>
       <Button onClick = {handleSubmit}>search</Button>
     </Form>
+  )
+}
+
+Featured.ButtonHolder = function FeaturedButtonHolder({ children, ...restProps})
+{
+  return(
+    <ButtonHolder {...restProps}>
+      { children }
+    </ButtonHolder>
+  )
+}
+
+Featured.Button = function FeaturedButton({ to, children, ...restProps})
+{
+  return(
+    <ReachRouterLink to={to} style={{ textDecoration: 'none' }}>
+      <Button { ...restProps }> { children }</Button>
+    </ReachRouterLink>
   )
 }
