@@ -18,9 +18,9 @@ Header.Logo = function HeaderLogo({ to, ...restProps }){
   )
 }
 
-Header.TextLink = function HeaderTextLink({ to, children, ...restProps }) {
+Header.TextLink = function HeaderTextLink({ to, children }) {
   return(
-      <Link {...restProps}>{children}</Link>
+      <Link to={to}>{children}</Link>
   );
 };
 
