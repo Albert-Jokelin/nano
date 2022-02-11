@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 
 export const Background = styled.div`
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url(${props => props.img}) center / cover no-repeat;
-  height: 650px;
+  height: 670px;
   align-items:center;
   position: relative;
 `;
