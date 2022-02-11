@@ -86,8 +86,4 @@ export const Image = styled.img`
   max-width: 300px;
   content: url(${props => props.src});
   border-radius: 10px 10px 0px 0px;
-
-  :hover{
-    content: url(${props => props.animation})
-  }
 `
