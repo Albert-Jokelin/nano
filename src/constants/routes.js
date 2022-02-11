@@ -4,3 +4,4 @@ export const RESOURCES = '/resources'
 export const SIGN_UP = '/signup';
 export const SIGN_IN = '/signin';
 export const CONFIRM = '/confirmLogout'
+export const ERROR = '/error-404'
