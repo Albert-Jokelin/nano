@@ -83,7 +83,7 @@ export const Image = styled.img`
   margin-left:auto;
   margin-right: auto;
   height: 250px;
-  max-width: 300px;
+  width: 300px;
   content: url(${props => props.src});
   border-radius: 10px 10px 0px 0px;
 `
