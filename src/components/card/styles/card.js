@@ -78,11 +78,20 @@ export const Holder = styled.div`
   height: 500px;
   width: 300px;
   border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+
+  &:hover{
+    color:white;
+    background-color: grey;
+    transform: scale(1.05)
+  }
+
 `
 export const Image = styled.img`
   margin-left:auto;
   margin-right: auto;
-  height: 250px;
+
   width: 300px;
   content: url(${props => props.src});
   border-radius: 10px 10px 0px 0px;
