@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Holder, Image, Row, Column } from './styles/card'
+import { Container, Holder, Image, Row, Column, Title, Description } from './styles/card'
 
 export default function Card({ children, ...restProps }){
   return(
@@ -47,5 +47,21 @@ Card.Column = function CardColumn({ children })
     <Column>
       { children }
     </Column>
+  )
+}
+
+Card.Title = function CardTitle({ children })
+{
+  return(
+    <Title>
+      { children }
+    </Title>)
+}
+
+Card.Description = function CardDescription({ children }) {
+  return(
+    <Description>
+      { children }
+    </Description>
   )
 }

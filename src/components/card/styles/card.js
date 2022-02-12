@@ -23,7 +23,7 @@ const getFlex = (value) => {
 }
 
 export const Container = styled.div`
-  border: 2px solid gray;
+  // border: 2px solid gray;
   margin: 10px;
   max-width: 100%;
   display:flex;
@@ -80,11 +80,13 @@ export const Holder = styled.div`
   border-radius: 10px;
   overflow: hidden;
   transition: 0.5s;
+  text-align: center;
 
   &:hover{
     color:white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
     background-color: grey;
-    transform: scale(1.05)
+    transform: scale(1.05);
   }
 
 `
@@ -95,4 +97,11 @@ export const Image = styled.img`
   width: 300px;
   content: url(${props => props.src});
   border-radius: 10px 10px 0px 0px;
+`
+export const Title = styled.h4`
+
+`
+
+export const Description = styled.p`
+
 `

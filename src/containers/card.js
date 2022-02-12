@@ -9,6 +9,12 @@ export function CardContainer() {
             return (
               <Card.Holder key={i} props={object}>
                 <Card.Image src={object.image} />
+                <Card.Title>
+                  {object.name}
+                </Card.Title>
+                <Card.Description>
+                  { object.description }
+                </Card.Description>
                 </Card.Holder>
             )
           })}
