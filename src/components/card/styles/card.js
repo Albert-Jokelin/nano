@@ -99,7 +99,8 @@ export const Image = styled.img`
   border-radius: 10px 10px 0px 0px;
 `
 export const Title = styled.h4`
-
+  margin-left:10px;
+  margin-right: 10px;
 `
 
 export const Description = styled.p`
